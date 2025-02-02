@@ -29,7 +29,7 @@ fi
 make_target() {
   mkdir -p build && cd build
   cmake $PKG_CMAKE_OPTS_TARGET -DCMAKE_CXX_FLAGS="-march=armv8-a+crypto" ..
-  make -j${JOBS}
+  make
 }
 
 makeinstall_target() {
